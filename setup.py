@@ -20,5 +20,6 @@ setup(name='duckduckgo2',
                    "Programming Language :: Python",
                    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
                    ],
-      entry_points={'console_scripts':['ddg = duckduckgo:main']},
+      entry_points={'console_scripts':['ddg = duckduckgo:main',
+                                       'ia = duckduckgo:ia']},
       )

@@ -171,6 +171,14 @@ def get_zci(q, web_fallback=True, priority=['answer', 'abstract', 'related.0', '
 
     return response
 
+def ia():
+    if len(sys.argv) > 1:
+        q = get_zci(' '.join(sys.argv[1:]))
+        sys.stdout.write(q)
+        sys.stdout.write('\n')
+    else:
+        print('Usage: %s [query]' % sys.argv[0])
+
 def main():
     if len(sys.argv) > 1:
         q = query(' '.join(sys.argv[1:]))
